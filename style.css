@@ -1,0 +1,52 @@
+/* Estilo padrão */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/* Alinhamento do jogo */
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: #f7f7f7;
+}
+
+/* Distanciamento dos itens um em cima do outro */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Alinhamento do titulo */
+h1{
+    text-align: center;
+}
+
+/* Estilo da linha abaixo do titulo */
+hr{
+    font-weight: bold;
+    height: 3px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+/* Div da box do jogo indicando as colunas */
+.game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Estilo dos botões, os campos clicaveis */
+.game button{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background: white;
+}
